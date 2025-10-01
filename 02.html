@@ -7,4 +7,16 @@ Usando for...of, crie um novo array contendo apenas os e-mails que são consider
 Exiba a lista de e-mails válidos.
     */
 
+    let emails = ["contato@site.com", "user.g", "aluno@escola.org", "teste"];
+    const emailUsuario = prompt(`Informe o seu email.`);
+    emails.push(emailUsuario);
+    let emailsValidos = [];
+
+    for (let email of emails){
+        if(email.indexOf("@") !== -1){
+            emailsValidos.push(email);
+        }
+    }
+
+alert(`Os emails válidos são ${emailsValidos.join(", ")}`)
 </script>
