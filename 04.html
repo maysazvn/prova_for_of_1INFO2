@@ -11,10 +11,15 @@ Apresente para o usuário qual é a palavra mais longa contida no Array.
     const usuario = prompt(`Insira o seu nome.`);
     palavras.push(usuario);
 
-    for(let palavra of palavras){
-        Array.from(palavra);
+    let maior = "0";
 
-        
+    for (let palavra of palavras) {
+
+        let soletrando = Array.from(palavra)
+        if (soletrando.length > maior.length)
+            maior = palavra;
     }
+
+    alert(`A maior palavra é ${maior}`)
 
 </script>

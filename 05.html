@@ -7,4 +7,21 @@ Você deve perguntar para o usuário qual a porcentagem de aumento e, então, ca
 Apresente para o usuário, no final do programa, a soma de todos os preços que estão no Array.
     */
 
+    let precosAntigos = [89.90, 750.00, 1200.50, 40.00];
+    const aumento = Number(prompt(`Qual é a porcentagem de aumento?`));
+
+    let soma = 0;
+
+    for(let preco of precosAntigos){
+
+        let porcentagem = preco * (aumento/100)
+        let calculo = preco + aumento;
+
+        soma = soma + calculo;
+    }
+
+    alert(`A soma de todos os preços que estão no array é R$${soma}.`)
+
+
 </script>
+
