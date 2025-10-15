@@ -7,4 +7,18 @@ Usando for...of, calcule o custo total de todas as contas já com o juro aplicad
 Apresente para o usuário qual será o valor final da compra.
     */
 
+    let contasNaoPagas = [50.00, 15.50, 120.00, 80];
+    const pergunta = Number(prompt(`Quanto será o Juros aplicado nos valores? (porcentagem)`));
+
+    let inicio = 0;
+
+    for (let valor of contasNaoPagas) {
+        let porcentagem = valor * (pergunta / 100);
+        let resultado = porcentagem + valor;
+
+        inicio = inicio + resultado;
+    }
+
+
+    alert(`O valor final da compra é ${inicio}`);
 </script>

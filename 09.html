@@ -8,4 +8,19 @@ const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
 Apresente para o usuário quais itens ele conseguirá comprar no mercado.
     */
 
+    let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
+    const itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
+
+    itensConseguidos = [];
+
+    for (let itens of listaDeCompras){
+        if(itensDisponiveis.indexOf(itens) !== -1){
+            itensConseguidos.push(itens)
+        }
+    }
+
+    alert(`Os itens que ele conseguiu comprar foram ${itensConseguidos.join(", ")}`);
+
+
+
 </script>
